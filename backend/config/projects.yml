@@ -1,0 +1,11 @@
+projects:
+  - name: Data Management Project
+    description: Un progetto universitario che ha come obiettivo quello di raggruppare i dati da differenti fonti dati.
+    image: https://example.com/images/portfolio.png
+    url: https://github.com/tuo_username/portfolio-website
+
+  - name: University-Chatbot
+    description: A simple chatbot.
+    image: https://example.com/images/weather-app.png
+    url: https://github.com/tuo_username/weather-app
+
