@@ -13,15 +13,31 @@ header {
   z-index: 1000;
 }
 nav {
+  position: relative;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  height: 60px; /* o quanto vuoi */
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.name {
+  flex: 1;
+  text-align: left;
 }
 nav a {
   color: white;
   text-decoration: none;
-  margin-left: 1.5rem;
   font-weight: bold;
+}
+
+.nav-links {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 1.5rem;
 }
 section {
   padding: 4rem 2rem;
@@ -48,4 +64,30 @@ footer {
   padding: 2rem;
   background-color: #f1f1f1;
   margin-top: 2rem;
+}
+
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 1rem;
+  padding: 1rem 0;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none; /* nasconde la scrollbar */
+}
+
+.card {
+  flex: 0 0 300px;
+  scroll-snap-align: start;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.card h3 {
+  margin-top: 0;
 }

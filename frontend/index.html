@@ -6,12 +6,14 @@
   <title>Tommaso Bruschi</title>
   <link rel="stylesheet" href="stile/style.css">
 </head>
+<script src="scripts/projects.js"></script>
+
 <body>
 
 <header>
   <nav>
-    <div><strong>Tommaso Bruschi </strong> - Data Engineer and Business Intelligence Consultant</div>
-    <div>
+    <div class="name"><strong>Tommaso Bruschi </strong></div>
+    <div class="nav-links">
       <a href="#about">Presentazione</a>
       <a href="#projects">Progetti</a>
       <a href="#blogs">Blog</a>
@@ -26,29 +28,25 @@
 
 <section id="projects">
   <h2>Progetti</h2>
-  <div class="project">
-    <h3>Analisi Vendite</h3>
-    <p>Dashboard vendite realizzata con Python e Plotly.</p>
-    <a href="https://github.com/tuo-nome/analisi-vendite" target="_blank">Vai al progetto</a>
-  </div>
-  <div class="project">
-    <h3>ETL GitHub</h3>
-    <p>Pipeline ETL con Airflow per estrarre dati da GitHub.</p>
-    <a href="https://github.com/tuo-nome/etl-github" target="_blank">Vai al progetto</a>
+  <div class="carousel"  id="projects-carousel">
+
   </div>
 </section>
 
 <section id="blogs">
   <h2>Blog</h2>
-  <div class="blog">
-    <h3>Come costruire una pipeline ETL in Python</h3>
-    <p>Una guida passo-passo su come progettare e implementare una semplice pipeline ETL utilizzando Pandas e Airflow.</p>
-    <a href="#">Leggi di più</a>
-  </div>
-  <div class="blog">
-    <h3>Visualizzare dati con Plotly</h3>
-    <p>Scopri come creare grafici interattivi e dashboard moderne con Plotly e Dash.</p>
-    <a href="#">Leggi di più</a>
+  <div class="carousel">
+    <div class="card">
+      <h3>Come costruire una pipeline ETL in Python</h3>
+      <p>Una guida passo-passo su come progettare e implementare una semplice pipeline ETL utilizzando Pandas e Airflow.</p>
+      <a href="#">Leggi di più</a>
+    </div>
+    
+    <div class="card">
+      <h3>Visualizzare dati con Plotly</h3>
+      <p>Scopri come creare grafici interattivi e dashboard moderne con Plotly e Dash.</p>
+      <a href="#">Leggi di più</a>
+    </div>
   </div>
 </section>
 
