@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="stile/style.css">
 </head>
 <script src="scripts/projects.js"></script>
-<script src="scripts/form.js"></script>
+
 
 <body>
 
@@ -15,7 +15,8 @@
   <nav>
     <div class="name"><strong>Tommaso Bruschi </strong></div>
     <div class="nav-links">
-      <a href="#about">Presentazione</a>
+      <a href="#about">Chi sono</a>
+      <a href="#esplav">Esperienze lavorative</a>
       <a href="#projects">Progetti</a>
       <a href="#blogs">Blog</a>
     </div>
@@ -26,6 +27,12 @@
   <h2>Chi sono</h2>
   <p>Sono un Data Engineer con una laurea triennale in Statistica e attualmente sto frequentando la magistrale in Data Science, sono appassionato di dati, automazione e sviluppo di soluzioni intelligenti. Questo sito mostra alcuni dei miei progetti e articoli di blog.</p>
 </section>
+
+<section id="esplav">
+  <h2>Esperienze lavorative</h2>
+  <p>Sono un Data Engineer con una laurea triennale in Statistica e attualmente sto frequentando la magistrale in Data Science, sono appassionato di dati, automazione e sviluppo di soluzioni intelligenti. Questo sito mostra alcuni dei miei progetti e articoli di blog.</p>
+</section>
+
 
 <section id="projects">
   <h2>Progetti</h2>
@@ -52,24 +59,25 @@
 </section>
 
 
-<section id="contact-form">
+<section>
   <h2>Contattami</h2>
-  <form onsubmit="event.preventDefault(); alert('Messaggio inviato! (simulato)')">
+  <form id="contact-form">
     <div class="form-row">
       <div class="form-group">
         <label for="nome">Nome</label>
-        <input type="text" id = "nome" placeholder="Il tuo nome" required>
+        <input type="text" id = "nome" name="nome" placeholder="Il tuo nome" required>
       </div>
       <div class="form-group">
         <label for="email">Email</label>
-        <input type="email" id="email" placeholder="La tua email" required>
+        <input type="email" id="email" name="email" placeholder="La tua email" required>
       </div>
     </div>
     <label for="richiesta">Spiegami brevemente di cosa hai bisogno:</label>
-    <textarea rows="5" id="richiesta" placeholder="Scrivi il tuo messaggio..." required></textarea>
+    <textarea rows="5" name="richiesta" id="richiesta" placeholder="Scrivi il tuo messaggio..." required></textarea>
     <button type="submit">Invia</button>
     
   </form>
+  <script src="scripts/form.js" defer></script>
 </section>
 
 
